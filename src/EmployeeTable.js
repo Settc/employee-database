@@ -16,10 +16,10 @@ class EmployeeTable extends Component {
                        </tr>
                    </thead>
                    <tbody>
-                       <td>Audrey Caufield</td>
-                       <td>02/29/92</td>
-                       <td>acaufield@gmail.com</td>
-                       <td>5555555555</td>
+                       <td>{this.props.name}</td>
+                       <td>{this.props.dob}</td>
+                       <td>{this.props.email}</td>
+                       <td>{this.props.phone}</td>
                    </tbody>
                </table>
             </div>
