@@ -16,6 +16,7 @@ class EmployeeTable extends Component {
                        </tr>
                    </thead>
                    <tbody>
+                       <img src={this.props.image} alt="employee"></img>
                        <td>{this.props.name}</td>
                        <td>{this.props.dob}</td>
                        <td>{this.props.email}</td>
