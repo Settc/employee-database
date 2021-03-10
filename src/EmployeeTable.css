@@ -1,7 +1,11 @@
 table {
-    margin: 0 auto 0 auto;
+    margin: 10px auto 0 auto;
+    border: 2px solid #3f3f3f;
+    padding: 10px 0 10px 0;
 }
 
-td {
-    padding: 2px 4px 2px 4px;
+th {
+    background-color: #cdecff ;
+    
 }
+

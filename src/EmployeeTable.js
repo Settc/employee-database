@@ -1,31 +1,45 @@
-import React, { Component } from "react"
+import React from "react"
+import TableData from "./TableData"
 import "./EmployeeTable.css"
 
-class EmployeeTable extends Component {
-    render() {
+const EmployeeTable = ( {employees} ) => {
+        const empArr = employees.map((employee, i) => {
+            
+            return (
+            
+             <TableData 
+            key={employees.id}
+            img={employees[i].results[0].picture.thumbnail} 
+            name={employees[i].results[0].name.first}
+            dob={employees[i].results[0].dob.age}
+            email={employees[i].results[0].email}
+            phone={employees[i].results[0].phone}
+            />
+            )
+        })
+        
         return (
             <div>
                <table>
-                   <caption>Employees</caption>
+                   
                    <thead>
                        <tr>
-                           <th>Full Name</th>
-                           <th>D.O.B.</th>
-                           <th>Email</th>
-                           <th>Phone</th>
+                        <th><i class="fas fa-camera-retro"></i></th>
+                        <th>Full Name</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Phone</th>
                        </tr>
                    </thead>
+
                    <tbody>
-                       <img src={this.props.image} alt="employee"></img>
-                       <td>{this.props.name}</td>
-                       <td>{this.props.dob}</td>
-                       <td>{this.props.email}</td>
-                       <td>{this.props.phone}</td>
+                       {empArr}
                    </tbody>
+
                </table>
             </div>
         )
     }
-}
+
 
 export default EmployeeTable
