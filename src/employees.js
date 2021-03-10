@@ -1,6 +1,7 @@
 export const employees = [
         {
         "id": 0,
+        "name": "Brad Gibson",
         "results": [
           {
             "gender": "male",
@@ -64,6 +65,7 @@ export const employees = [
       },
       {
         "id": 1,
+        "name": "Amber Harris",
         "results": [
             {
                 "gender": "female",
@@ -131,6 +133,7 @@ export const employees = [
     },
     {
     "id": 2,
+    "name": "Elizabeth Li",
     "results": [
         {
             "gender": "female",
@@ -198,6 +201,7 @@ export const employees = [
 },
 {
   "id": 3,
+  "name": "Juliette Ennis",
   "results": [
       {
           "gender": "female",
@@ -265,6 +269,7 @@ export const employees = [
 },
 {
   "id": 4,
+  "name": "Matilda Salminen",
   "results": [
       {
           "gender": "female",

@@ -1,6 +1,6 @@
 import React from "react"
 
-const TableData = ( {img, id, name, dob, email, phone } ) => {
+const TableData = ( {img, name, dob, email, phone } ) => {
     return (
         
             

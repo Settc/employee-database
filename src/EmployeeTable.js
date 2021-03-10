@@ -3,14 +3,14 @@ import TableData from "./TableData"
 import "./EmployeeTable.css"
 
 const EmployeeTable = ( {employees} ) => {
-        const empArr = employees.map((employee, i) => {
+        const employeeArr = employees.map((employee, i) => {
             
         return (
             
              <TableData 
             key={employees.id}
             img={employees[i].results[0].picture.thumbnail} 
-            name={employees[i].results[0].name.first}
+            name={employees[i].name}
             dob={employees[i].results[0].dob.age}
             email={employees[i].results[0].email}
             phone={employees[i].results[0].phone}
@@ -33,7 +33,7 @@ const EmployeeTable = ( {employees} ) => {
                    </thead>
 
                    <tbody>
-                       {empArr}
+                       {employeeArr}
                    </tbody>
 
                </table>

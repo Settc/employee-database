@@ -1,6 +1,6 @@
 import React from "react"
 
-const Header = () => {
+const Header = ( {searchChange} ) => {
     
         return(
             <div className="tc bg-light-red pa4">
@@ -9,7 +9,8 @@ const Header = () => {
                 className="bg-lightest-blue"
                 type="search"
                 placeholder="Search employees"
-                ></input>
+                onChange={searchChange}
+                />
             </div>
         )
     }
