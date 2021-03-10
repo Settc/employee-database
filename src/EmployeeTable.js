@@ -5,7 +5,7 @@ import "./EmployeeTable.css"
 const EmployeeTable = ( {employees} ) => {
         const empArr = employees.map((employee, i) => {
             
-            return (
+        return (
             
              <TableData 
             key={employees.id}
